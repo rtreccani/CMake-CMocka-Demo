@@ -1,6 +1,9 @@
 # CMake-CMocka demo
 ## why?
 I needed to learn how to use CMocka, and I couldn't find any good sources on integrating it with CMake, so I decided to upload this repo.
+It shows how to use Cmake and Cmocka to do unit testing on your program, use mocking, and configure tools to automatically test.
+It also follows the KISS(Keep It Simple Stupid) principle by not doing anything unneccessary. if you spot a way to make this repo less code-heavy without 
+losing functionality, let me know or make a PR, especially with regards to the CMakeLists.txt which i tried to keep minimal.
 
 ## what? 
 The CMake file is configured to generate 2 targets, mainProgram and tester. MainProgram just runs the `get_random_char` function 5 times, passes it to 
