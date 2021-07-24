@@ -21,6 +21,16 @@ In the testing target, the mocked functions are purposefully not compiled, to ca
 to take it's place. 
 
 ## how
+### Warning
+you need CMake for this, as well as CMocka. the dependence on CMake >= 3.13.0 is no longer valid, and it works down to 3.10 (tested)
+and probably down to cmake 3.0 or below (untested) 
+
+on ubuntu 
+```
+sudo apt install cmake libcmocka-dev gcc g++
+```
+will fetch the appropriate tools. 
+
 Clone this repo, then from the command line: 
 ```
 mkdir build
