@@ -12,7 +12,7 @@ target_include_directories(mainProgram PRIVATE includes/)
 #it will re-search the token with __wrap prepended, therefore finding the mocked version of the function
 #instead
 add_executable(tester test/test_runner.c src/non_mocked.c src/mocked.c test/mocks.c)
-target_link_options(tester PRIVATE -Wl,--wrap=get_random_char)
+set_target_properties(tester PROPERTIES LINK_FLAGS "-Wl,--wrap=get_random_char")
 target_include_directories(tester PRIVATE includes/)
 target_link_libraries(tester cmocka)
 add_test(mainProgram tester) #i think this just makes tester formally a test of the mainProgram
