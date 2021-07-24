@@ -1,8 +1,8 @@
-#CMake-CMocka demo
-##why?
+# CMake-CMocka demo
+## why?
 I needed to learn how to use CMocka, and I couldn't find any good sources on integrating it with CMake, so I decided to upload this repo.
 
-##what? 
+## what? 
 The CMake file is configured to generate 2 targets, mainProgram and tester. MainProgram just runs the `get_random_char` function 5 times, passes it to 
 `get_int_from_char`, and prints the output. 
 
@@ -20,7 +20,7 @@ option `-Wl, --wrap=<function_name>` and an undefined reference to `<function_na
 In the testing target, the mocked functions are purposefully not compiled, to cause a linker error, and then the linker option is set to allow the 'wrapped' or 'mocked' unit
 to take it's place. 
 
-##how
+## how
 Clone this repo, then from the command line: 
 `mkdir build`
 `cd build`
