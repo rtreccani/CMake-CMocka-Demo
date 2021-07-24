@@ -23,8 +23,11 @@ to take it's place.
 ## how
 Clone this repo, then from the command line: 
 `mkdir build`
+
 `cd build`
+
 `cmake ..`
+
 `make`
 will run cmake to configure the build directory, and then build the mainProgram and tester binaries. 
 From there, you can run 
