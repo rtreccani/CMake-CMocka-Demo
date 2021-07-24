@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13) #3.13 introduces target_link_options
+cmake_minimum_required(VERSION 3.0) #3.13 introduces target_link_options
 project(CMocka-Demo)
 find_package(CMocka) #you need to have CMocka installed to at least 3.13 in a path where this can find it 
 include(CTest) #enables testing via ctest or some GUI options
